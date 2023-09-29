@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pagination2.css">
+    <title>Form and Table Example</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Enter Information</h2>
+        <form id="infoForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" required>
+
+            <label for="pincode">Pincode:</label>
+            <input type="text" id="pincode" required>
+
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female" required>
+            <label for="female">Female</label>
+
+            <label for="food">Choice of Food (select at least 2):</label>
+            <select id="food" multiple required>
+                <option value="Pizza">Pizza</option>
+                <option value="Burger">Burger</option>
+                <option value="Pasta">Pasta</option>
+                <option value="Salad">Salad</option>
+                <option value="Soup">Soup</option>
+            </select>
+
+            <label for="state">State:</label>
+            <input type="text" id="state" required>
+
+            <label for="country">Country:</label>
+            <input type="text" id="country" required>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <h2>Information Table</h2>
+        <table id="infoTable">
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Address</th>
+                    <th>Pincode</th>
+                    <th>Gender</th>
+                    <th>Choice of Food</th>
+                    <th>State</th>
+                    <th>Country</th>
+                </tr>
+            </thead>
+            <tbody id="infoTableBody">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="pagination2.js"></script>
+</body>
+
+</html
